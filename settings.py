@@ -1,5 +1,8 @@
 # settings.py
 
+
+import pygame
+
 # Tamaño de la pantalla
 WIDTH = 300
 HEIGHT = 600
@@ -24,7 +27,9 @@ LIGHT_GRAY = (180, 180, 180)
 
 
 # Columnas del Tetris
-COLUMNS = 10  
+COLUMNS = 10 
+# Número de filas en el tablero de Tetris
+ROWS = 20  # Altura estándar del tablero 
 
 # Lista de colores para las piezas
 COLORS = [
@@ -35,3 +40,20 @@ COLORS = [
     (255, 165, 0), # Naranja
     (128, 0, 128)  # Púrpura
 ]
+
+
+# Controles por defecto
+DEFAULT_CONTROLS = {
+    "left": pygame.K_LEFT,      # Flecha izquierda
+    "right": pygame.K_RIGHT,    # Flecha derecha
+    "down": pygame.K_DOWN,      # Flecha abajo
+    "drop": pygame.K_SPACE,     # Barra espaciadora
+    "rotate": pygame.K_UP       # Flecha arriba
+}
+
+# Controles personalizables (inicialmente iguales a los predeterminados)
+CONTROLS = DEFAULT_CONTROLS.copy()
+
+
+# Velocidad de caída de las piezas (milisegundos)
+DROP_TIME = 500  # Cada 500ms la pieza bajará una celda
