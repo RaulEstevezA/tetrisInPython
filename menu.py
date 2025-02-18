@@ -62,7 +62,7 @@ def show_game_over(screen):
 
 # def menu configurar botones
 def configure_controls(screen):
-    """Permite al usuario cambiar las teclas de movimiento"""
+    """Permite al usuario cambiar las teclas de movimiento y devuelve el diccionario actualizado"""
     screen.fill((0, 0, 0))
     font = pygame.font.Font(None, 36)
 
@@ -86,9 +86,5 @@ def configure_controls(screen):
                     new_controls[action] = event.key
                     waiting = False
 
-    # Actualizar controles
-    global CONTROLS
-    CONTROLS.update(new_controls)
+    return new_controls  # En lugar de modificar `CONTROLS` directamente
 
-    # Regresar al menú principal
-    show_menu(screen)
