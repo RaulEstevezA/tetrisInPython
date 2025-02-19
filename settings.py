@@ -57,3 +57,7 @@ CONTROLS = DEFAULT_CONTROLS.copy()
 
 # Velocidad de caída de las piezas (milisegundos)
 DROP_TIME = 500  # Cada 500ms la pieza bajará una celda
+
+
+# Puntuación necesaria para subir de nivel
+LEVEL_UP_SCORE = 1000  # Cambiar este valor si quieres que el nivel suba más rápido o más lento

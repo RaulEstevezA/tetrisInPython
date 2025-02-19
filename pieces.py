@@ -1,6 +1,5 @@
 # pieces.py
 
-
 import pygame
 import random
 from settings import GRID_SIZE, COLUMNS, ROWS, COLORS, MARGIN_LEFT, MARGIN_TOP
@@ -23,7 +22,6 @@ class Piece:
         self.color = random.choice(COLORS)
         self.x = COLUMNS // 2 - len(self.shape[0]) // 2  # Centrar en columnas
         self.y = -2  # Empieza un poco más arriba del tablero
-
 
     def draw(self, screen):
         """Dibuja la pieza en la pantalla con los márgenes aplicados"""
@@ -52,12 +50,6 @@ class Piece:
                 self.shape = rotated_shape
                 return  # Se ajustó correctamente, terminamos
 
-        # Si no encuentra una posición válida, no rota
-        print("[ROTACIÓN] No hay espacio para rotar")
-
-
-
-    
     def move(self, dx, dy, board):
         """Mueve la pieza si la nueva posición es válida"""
         new_x = self.x + dx
@@ -69,9 +61,6 @@ class Piece:
             return True  # ⬅️ Si el movimiento es válido, devolver True
         return False  # ⬅️ Si no es válido, devolver False
 
-
-    
-
     def _is_valid_position(self, new_x, new_y, shape, board):
         """Verifica si la nueva posición está dentro del tablero y no choca con otras piezas"""
         for i, row in enumerate(shape):
@@ -81,15 +70,8 @@ class Piece:
                     test_y = new_y + i
 
                     if test_x < 0 or test_x >= COLUMNS or test_y >= ROWS:
-                        print(f"[DEBUG] Fuera del tablero: ({test_x}, {test_y})")
                         return False  # Se sale del tablero
 
                     if test_y >= 0 and board.grid[test_y][test_x] != 0:
-                        print(f"[DEBUG] Colisión detectada en ({test_x}, {test_y})")
                         return False  # Hay una colisión con una pieza fija
         return True
-
-
-
-
-

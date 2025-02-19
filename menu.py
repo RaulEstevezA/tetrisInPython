@@ -17,6 +17,7 @@ def show_menu(screen):
     controls_text = font.render("Presiona C para configurar controles", True, WHITE)
     exit_text = font.render("Presiona ESC para salir", True, WHITE)
 
+
     # Calcular posiciones centradas
     title_x = (WINDOW_WIDTH - title.get_width()) // 2
     title_y = (WINDOW_HEIGHT // 4)
@@ -25,10 +26,11 @@ def show_menu(screen):
     start_y = (WINDOW_HEIGHT // 2)
 
     controls_x = (WINDOW_WIDTH - controls_text.get_width()) // 2
-    controls_y = start_y + 50  # Un poco debajo de la opción de jugar
+    controls_y = start_y + 50  
 
     exit_x = (WINDOW_WIDTH - exit_text.get_width()) // 2
-    exit_y = controls_y + 50  # Un poco debajo de la opción de controles
+    exit_y = controls_y + 50 
+
 
     # Dibujar textos centrados
     screen.blit(title, (title_x, title_y))
@@ -50,14 +52,28 @@ def show_pause_menu(screen):
 
 # def menu game over
 def show_game_over(screen):
-    """Muestra la pantalla de Game Over"""
-    screen.fill((0, 0, 0))
-    font = pygame.font.Font(None, 48)
+    """Muestra la pantalla de Game Over centrada"""
+    screen.fill((0, 0, 0))  # Fondo negro
+    font = pygame.font.Font(None, 72)  # Tamaño más grande
+    sub_font = pygame.font.Font(None, 36)  # Texto secundario más pequeño
+
+    # Renderizar los textos
     game_over_text = font.render("GAME OVER", True, (255, 0, 0))
-    restart_text = font.render("Presiona ENTER para reiniciar", True, (255, 255, 255))
-    screen.blit(game_over_text, (80, 250))
-    screen.blit(restart_text, (50, 350))
+    restart_text = sub_font.render("Presiona ENTER para volver al menú", True, (255, 255, 255))
+
+    # Calcular posiciones centradas
+    game_over_x = (WINDOW_WIDTH - game_over_text.get_width()) // 2
+    game_over_y = (WINDOW_HEIGHT // 3)
+
+    restart_x = (WINDOW_WIDTH - restart_text.get_width()) // 2
+    restart_y = game_over_y + 100  # Un poco debajo del título
+
+    # Dibujar textos centrados en la pantalla
+    screen.blit(game_over_text, (game_over_x, game_over_y))
+    screen.blit(restart_text, (restart_x, restart_y))
+
     pygame.display.flip()
+
 
 
 # def menu configurar botones
