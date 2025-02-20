@@ -1,6 +1,6 @@
 # 🎮 Tetris Game (Python Edition)
 
-[![Watch the demo on YouTube](https://your-youtube-link.com)](https://your-youtube-link.com)
+[![Watch the demo on YouTube](https://your-youtube-link.com)](https://your-youtube.com)
 
 ## 🎬 Inspiration
 
