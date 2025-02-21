@@ -1,3 +1,0 @@
-([('tetris',
-   '/Users/raulestevez/Documents/Repositorios/tetrisInPython/dist/tetris',
-   'EXECUTABLE')],)
