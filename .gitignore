@@ -27,3 +27,12 @@ pip-delete-this-directory.txt
 build/
 dist/
 tetris.spec
+
+# python cache
+__pycache__/
+*.py[cod]
+
+# pyinstaller
+build/
+dist/
+*.spec
