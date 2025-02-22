@@ -1,6 +1,6 @@
 # 🎮 Tetris Game (Python Edition)
 
-[![Watch the demo on YouTube](https://your-youtube-link.com)](https://your-youtube.com)
+[![Watch the demo on YouTube](https://youtu.be/EJYO5XpEWvg)](https://youtu.be/EJYO5XpEWvg)
 
 ## 🎬 Inspiration
 
@@ -86,23 +86,6 @@ You need **300 points** to advance to the next level.
    python tetris.py
    ```
 
-### 📦 Build Executable
-
-If you want to create a standalone executable:
-
-1. **Install PyInstaller:**
-   ```bash
-   pip install pyinstaller
-   ```
-
-2. **Build the game:**
-   ```bash
-   pyinstaller --onefile --windowed tetris.py
-   ```
-
-3. **Find the executable:**  
-   The `.exe` or `.app` will be located in the `dist/` folder.
-
 ## 🎵 Audio & Music
 
 - The game includes a background track inspired by classic Tetris tunes.
@@ -111,7 +94,7 @@ If you want to create a standalone executable:
 
 ## 📹 Demo Video
 
-Check out the gameplay demo on [YouTube](https://your-youtube-link.com) to see it in action!
+Check out the gameplay demo on [YouTube](https://youtu.be/EJYO5XpEWvg) to see it in action!
 
 ## 📋 License
 
