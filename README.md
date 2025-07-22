@@ -1,8 +1,8 @@
-# 🎮 Tetris Game (Python Edition)
+# Tetris Game (Python Edition)
 
 [![Watch the demo on YouTube](https://youtu.be/EJYO5XpEWvg)](https://youtu.be/EJYO5XpEWvg)
 
-## 🎬 Inspiration
+## Inspiration
 
 The other day, I was watching the movie *Tetris* (2023), which tells the fascinating story behind the discovery of the game and the challenges of obtaining its licensing rights. After finishing the film, I felt the urge to play a classic Tetris game.
 
@@ -10,7 +10,7 @@ I started searching for a legal version online, but most of the ones I found wer
 
 I chose **Python** for this project since it's the language I’m most comfortable with. Here's how it came together!
 
-## ⚙️ Technologies Used
+## Technologies Used
 
 - **Python 3.12.6** – Main programming language.
 - **Pygame 2.6.1** – For rendering graphics, handling events, and managing game loops.
@@ -18,20 +18,20 @@ I chose **Python** for this project since it's the language I’m most comfortab
 - **Blackhole (macOS)** – To record in-game audio during development.
 - **VSCode** – The primary code editor.
 
-## 🚧 Challenges Faced
+## Challenges Faced
 
 - **Key Repeat Logic:** Implementing smooth and responsive key hold functionality for moving and dropping pieces took several iterations to perfect.
 - **Scoring System:** Designing a balanced scoring mechanism that factors in both the number of cleared lines and the current level.
 - **Instant Drop Feature:** Implementing a "hard drop" that allows the piece to instantly fall to the bottom and lock in place.
 - **Game Packaging:** Creating a working `.exe` (and `.app` for macOS) using PyInstaller while ensuring all dependencies, like music and assets, were bundled correctly.
 
-## 🕹️ How to Play
+## How to Play
 
-### 🎯 Objective
+### Objective
 
 Clear as many lines as possible by completing horizontal rows without gaps. The game speeds up as you level up, increasing the challenge.
 
-### 🎮 Controls
+### Controls
 
 | Action             | Default Key |
 |--------------------|-------------|
@@ -46,7 +46,7 @@ Clear as many lines as possible by completing horizontal rows without gaps. The 
 
 *Note:* You can reconfigure movement keys in the menu.
 
-### 🧮 Scoring
+### Scoring
 
 The scoring system is based on a combination of lines cleared, level multipliers, and bonus coefficients:
 
@@ -66,9 +66,9 @@ The scoring system is based on a combination of lines cleared, level multipliers
 
 You need **300 points** to advance to the next level.
 
-## 🛠️ How to Run
+## How to Run
 
-### ▶️ Run from Source
+### Run from Source
 
 1. **Clone the repository:**
    ```bash
@@ -86,26 +86,26 @@ You need **300 points** to advance to the next level.
    python tetris.py
    ```
 
-## 🎵 Audio & Music
+## Audio & Music
 
 - The game includes a background track inspired by classic Tetris tunes.
 - Music playback is handled using Pygame's mixer.
 - Volume is set to 60% by default but can be adjusted in the source.
 
-## 📹 Demo Video
+## Demo Video
 
 Check out the gameplay demo on [YouTube](https://youtu.be/EJYO5XpEWvg) to see it in action!
 
-## 📋 License
+## License
 
 This project is for educational and personal use.  
 Inspired by the original **Tetris** game concept, but all code here is original.
 
-## 🚀 Final Thoughts
+## Final Thoughts
 
 This project was a fun dive into game development using Python. It helped me sharpen my skills with Pygame, understand game loop logic, and tackle challenges like input handling, scoring systems, and packaging for distribution.
 
 If you enjoy it, feel free to leave feedback or suggest improvements. Happy stacking!
 
-🎉 **Thanks for playing!** 🎉
+ **Thanks for playing!** 
 
